@@ -8,6 +8,10 @@ namespace COMP123_Data
 {
     static class Program
     {
+        public static StartForm startForm;
+        public static MainForm mainForm;
+
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +20,12 @@ namespace COMP123_Data
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            startForm = new StartForm();
+            mainForm = new MainForm();
+
+            Application.Run(startForm);
+
         }
     }
 }
