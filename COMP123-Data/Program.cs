@@ -10,7 +10,7 @@ namespace COMP123_Data
     {
         public static StartForm startForm;
         public static MainForm mainForm;
-
+        public static AboutForm aboutForm;
 
         /// <summary>
         /// The main entry point for the application.
@@ -23,6 +23,7 @@ namespace COMP123_Data
 
             startForm = new StartForm();
             mainForm = new MainForm();
+            aboutForm = new AboutForm();
 
             Application.Run(startForm);
 
